@@ -1,0 +1,1 @@
+1.11 Develop a class "String1" for working with strings. define member functions in this class that provide input/output of class elements, as well as access to private members of the class.
