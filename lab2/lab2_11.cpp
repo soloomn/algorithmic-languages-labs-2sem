@@ -12,12 +12,12 @@ class String2
 {
     string st;
 public:
-    String2(string stt) :st(stt){};
-    String2(const String2& obj)
+    String2(string stt) :st(stt){}; // main constructor
+    String2(const String2& obj) // copy constructor
     {
-        st = obj.st;
+        st = obj.st; 
     }
-    void set_st1(string st1) { st = st1; }
+    void set_st1(string st1) { st = st1; } // access to private class elements
     void input();
     string output();
     string concat(string a, string b);
@@ -41,8 +41,8 @@ string String2::concat(string a, string b)
 
 int main()
 {
-    String2 s1("");
-    String2 s2(s1);
+    String2 s1(""); // construct
+    String2 s2(s1); // copy
     s1.input();
     s2.input();
     cout << s1.output() << endl << s2.output() << endl;
