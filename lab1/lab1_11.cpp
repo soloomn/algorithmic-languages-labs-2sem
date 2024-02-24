@@ -1,9 +1,6 @@
 #include <iostream>
 #include <conio.h>
-#include <windows.h>
 #include <string>
-#include <string.h>
-#include <iso646.h>
 #include <ctype.h>
 using namespace std;
 
