@@ -28,7 +28,7 @@ void String1::output()
 int String1::sumcs()
 {
     int sum = 0;
-    for (int i = 0; i < int(st1.size());i++) // size() seems safer than lenght()
+    for (int i = 0; i < int(st1.size());i++) // size() seems safer than length()
     {
         if (isdigit(st1[i])) // don't care about Undefined Behavior from isdigit() because we clearly define what we are typing
         {
