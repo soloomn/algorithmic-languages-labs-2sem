@@ -41,7 +41,7 @@ int String1::sumcs()
     return sum;
 }
 
-int main()
+int mainlab1()
 {
     String1 a;
     a.input();
