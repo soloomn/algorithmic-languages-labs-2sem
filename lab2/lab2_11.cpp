@@ -1,11 +1,6 @@
 #include <iostream>
 #include <conio.h>
-#include <Windows.h>
 #include <string>
-#include <String.h>
-#include <iso646.h>
-#include <ctype.h>
-#include <stdlib.h>
 using namespace std;
 
 class String2
@@ -39,7 +34,7 @@ string String2::concat(string a, string b)
     return a + b;
 }
 
-int main()
+int mainlab2()
 {
     String2 s1(""); // construct
     String2 s2(s1); // copy
