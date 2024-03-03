@@ -1,0 +1,4 @@
+3.11. Create a Circle class to work with flat circles. The length of the circle radius is set as a member of this class. 
+The class should contain a main constructor and a copy constructor. Overload in this class operator functions that provide input/output of class elements,
+as well as the assignment operator function. Additionally, overload operator functions for the elements of this class for the two operations ~ (bitwise negation) 
+and ! (logical negation), which return the length of a circle and the area of a circle, respectively.
