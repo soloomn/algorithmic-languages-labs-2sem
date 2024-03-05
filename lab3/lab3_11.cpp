@@ -7,31 +7,31 @@ using namespace std;
 
 class Circle
 {
-	// �������� ������:
+	// Data Elements:
 	float r;
-	/* ������������� ������� ����� � ������ (��� ������� ������ ���� ������ ��������������, ��������� ����� ��������� �������� �������� ������ �� �����, � �� ����������): */
+	/* friendly input and output functions (these functions must be friendly because the left operand of an operation is a reference to a stream, not a circle): */
 	friend istream& operator >> (istream&, Circle&);
 	friend ostream& operator << (ostream&, const Circle&);
-	//������� � ����� ������:
+	// functions - class members:
 public:
-	//������������:
-	// ��� � �����: �������� ����������� � ����������� �� ���������
+	// constructors:
+	// two in one: main constructor and default constructor
 	Circle(float rr = 5) : r(rr) {}
-	Circle(const Circle &); //����������� �����������
-	//����������:
+	Circle(const Circle &); //copy constructor
+	// destructor:
 	~Circle(){}
-	// ������� �������:
+	// access functions:
 	void Set_r(float rr) { r = rr; }
 	float Get_r() { return r; }
-	// ������� � ����� ������, �������������� ����-�����:
+	// functions - class members that provide input/output:
 	void input();
 	void output();
-	// ���������� ��������:
-	// �������� ������������ = :
+	// transaction overload:
+	// assignment operation = :
 	Circle& operator = (const Circle &);
-	// �������� ���������� ��������� ~ :
+	// bitwise negation operation ~ :
 	const Circle& operator ~ ();
-	// �������� ����������� ��������� ! :
+	// logical negation ! :
 	const Circle& operator ! ();
 };
 // ����������� �������:
