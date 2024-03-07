@@ -34,35 +34,35 @@ public:
 	// logical negation ! :
 	const Circle& operator ! ();
 };
-// ����������� �������:
+// function definition:
 
-// ���������� ��������� ������������:
+// assignment operator overloading:
 Circle& Circle::operator = (const Circle &obj)
 {
-	if (this != &obj) // �������� �� ���������������� (���� �1 = �1;)
-	{ /* � ������ ������ ������ �������� ������ ���� �������, ������� ����� ������ ����� �� ����� ������������ (this), ���������� ������� ��������� ������ �������, ������� ����� ������ ������ �� ����� ������������ (obj) */
+	if (this != &obj) // check for self-assignment (like c1 = c1;)
+	{ /* in this case, simply the data elements of the object to the left of the assignment sign (this) become equal to the data elements of the object to the right of the assignment sign (obj) */
 		r = obj.r;
 	}
-	return *this; /* ������� ���������� ������� ������, ��� �������� ��������� ������������� ������������ ���� c1 = c2 = c3 */
+	return *this; /* function returns the current object, this will allow multiple assignments of the type c1 = c2 = c3 */
 }
 
-// ���������� ��������� ����������� ���������
+// logical negation operator overloading
 
 const Circle& Circle::operator ! ()
 {
 	auto dl = M_PI*r*r;
-	return dl; // �������� �� ������� �����
+	return dl; // is responsible for the area of the circle
 }
 
-// ���������� ��������� ���������� ���������
+// bitwise negation operator overloading
 
 const Circle& Circle::operator ~ ()
 {
 	auto pl = 2*M_PI*r;
-	return pl; // �������� �� ����� ����������
+	return pl; // is responsible for the length of the circle
 }
 
-// ����������� ������������� ������� �����-������:
+// defining friendly I/O functions:
 istream& operator >> (istream& is, Circle& obj)
 {
 	do
