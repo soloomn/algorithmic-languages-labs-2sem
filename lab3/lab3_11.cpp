@@ -67,7 +67,7 @@ istream& operator >> (istream& is, Circle& obj)
 {
 	do
 	{
-		cout << "������� r:" << endl;
+		cout << "Set r:" << endl;
 		is >> obj.r;
 	} while (obj.r<0);
 	return is;
@@ -75,26 +75,26 @@ istream& operator >> (istream& is, Circle& obj)
 
 ostream& operator << (ostream& os, const Circle& obj)
 {
-	os << "�������� r:" << obj.r << endl;
+	os << "Value of r:" << obj.r << endl;
 	return os;
 }
 
-// ����������� �����������:
+// copy constructor:
 Circle::Circle(const Circle& obj)
 {
 	r = obj.r;
 }
 
-// �������-����� ������ ��� ����� � ������:
+// class member functions for input and output:
 void Circle::input()
 {
-	cout << "������� r:" << endl;
+	cout << "Set r:" << endl;
 	cin >> r;
 }
 
 void Circle::output()
 {
-	cout << "�������� r:" << r << endl;
+	cout << "Value of r:" << r << endl;
 }
 
 // ������ ���������, ������� ���������� ����� Circle:
