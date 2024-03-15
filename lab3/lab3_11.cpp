@@ -116,10 +116,11 @@ int main()
 	// сhanging the parameters of the circles:
 	a.Set_r(rr);
 	cout << "Value of r=" << a.Get_r() << endl;
-	//a.output(); // ������ ������������� �������������� �������:
-	cout << "������� ���������� a: ";
+	//a.output(); 
+	// example of using computational functions:
+	cout << "The area of the circle a: ";
 	cout << !a;
-	cout << "����� ���������� �: ";
+	cout << "The length of the circle a: ";
 	cout << ~a;
 	_getch();
 	return 0;
