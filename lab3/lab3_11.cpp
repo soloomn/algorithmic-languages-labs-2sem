@@ -97,43 +97,25 @@ void Circle::output()
 	cout << "Value of r:" << r << endl;
 }
 
-// ������ ���������, ������� ���������� ����� Circle:
+// example of a program that uses the Circle class:
 int main()
 {
-	//��������� ������� � ������������ ����������: 
-	if (SetConsoleCP(1251) == 0)
-		//�������� ������������ ��������� ��������� �������� ��� �����
-	{
-		cerr << "Fialed to set codepage!" << endl;
-		/* ���� �� ������� ���������� ������� ��������, ����� ��������� �� ������ */
-	}
-	if (SetConsoleOutputCP(1251) == 0)//���� ����� ��� ������
-	{
-		cerr << "Failed to set OUTPUT page!" << endl;
-	}
 	Circle a;
-	//������ ������������� ��������� ������������:
+	// example of using the main constructor:
 	//a.output();
 	Circle b(4.7);
 	//b.output();
-	//  ������ ������������� ������������ �����������:
+	// example of using the copy constructor:
 	Circle c(b);
 	//c.output();
-	//������ ������������� �������� ������������:
+	// example of using an assignment operation:
 	b = a;
-	//b.output();
-	//������ ������������� ������������� ������� �����-������:
-	//cin >> c;
-	//cout << c;
-	// ������ ���������� ������� �������:
-	//a.input();
-	//a.output();
 	float rr;
-	cout << "������� �������� r:" << endl;
+	cout << "Set the value of r:" << endl;
 	cin >> rr;
-	// �������� ��������� �����������:
+	// сhanging the parameters of the circles:
 	a.Set_r(rr);
-	cout << "�������� r=" << a.Get_r() << endl;
+	cout << "Value of r=" << a.Get_r() << endl;
 	//a.output(); // ������ ������������� �������������� �������:
 	cout << "������� ���������� a: ";
 	cout << !a;
