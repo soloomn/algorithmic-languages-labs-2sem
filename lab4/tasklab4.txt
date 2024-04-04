@@ -1,0 +1,3 @@
+4.11. Create a TreeDouble class to work with elements of a binary tree of real numbers. The class must contain the main constructor.
+Overload in this class the operator functions that provide input of tree elements.
+Additionally, create a function that prints the tree contents in descending order of its elements, as well as a function that allows to get the value of the root node.
