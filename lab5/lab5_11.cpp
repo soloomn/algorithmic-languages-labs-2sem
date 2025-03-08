@@ -24,8 +24,8 @@ template <class Stype> class Set  // Stype – условное название
     Stype *SetPtr; //  Указатель на члены множества
 	int MemSize;   //  Размер памяти, выделенный множеству
 
-    template<typename stype> friend istream& operator >> (istream& stream, Set &ob); // операторы ввода – вывода
-	template<typename stype> friend ostream& operator << (ostream& stream, Set &ob);
+    template<typename stype> friend istream& operator >> (istream& stream, Set &ob); // операторы ввода
+	template<typename stype> friend ostream& operator << (ostream& stream, Set &ob); // оператор вывода
 
 	Set(); // конструктор по умолчанию
 	Set (int size); // основной конструктор 
